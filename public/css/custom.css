@@ -1,0 +1,81 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: white;
+}
+
+.pilih-kategori .card {
+    border-radius: 15px;
+}
+
+.products .card {
+    border-radius: 15px;
+}
+
+.breadcrumb {
+    background-color: transparent;
+    padding: 0;
+}
+
+.breadcrumb .active {
+    font-weight: bold;
+    color: black;
+}
+
+.btn-dark {
+    border-radius: 10px;
+}
+.gambar-product {
+    background-color: #f1f1f1;
+    border-width: 0;
+    border-radius: 20px;
+}
+
+#carouselExampleIndicators {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+#carouselExampleIndicators .carousel-inner {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+#carouselExampleIndicators .carousel-inner .carousel-item {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.about-us {
+    padding-bottom: 50vh;
+}
+
+.about-us h1 {
+    text-align: center;
+    margin-bottom: 10vh;
+}
+
+.about-desc {
+    padding-top: 2vh;
+    padding-left: 2vh;
+    text-align: left;
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.about-img {
+    text-align: center;
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+footer {
+    padding-top: 100px;
+}
