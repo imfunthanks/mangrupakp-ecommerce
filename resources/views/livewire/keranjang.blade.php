@@ -1,4 +1,13 @@
 <div class="container">
+    <div class="cart-header">
+        <div class="row my-2 text-center">
+            <div class="col">
+                <h3 class="font-weight-bold">Your Cart</h3>
+                <p>Pastikan barang anda terbayar lunas</p>
+            </div>
+        </div>
+    </div>
+
     <div class="row mt-4 mb-2">
         <div class="col">
             <nav aria-label="breadcrumb">

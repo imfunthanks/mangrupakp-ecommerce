@@ -3,6 +3,11 @@ body {
     background-color: white;
 }
 
+/* Navbar */
+.nav-item {
+    margin-right: 15px;
+}
+
 .pilih-kategori .card {
     border-radius: 15px;
 }
@@ -24,6 +29,7 @@ body {
 .btn-dark {
     border-radius: 10px;
 }
+
 .gambar-product {
     background-color: #f1f1f1;
     border-width: 0;
@@ -34,7 +40,6 @@ body {
     position: relative;
     height: 100%;
     width: 100%;
-    border-radius: 10px;
 }
 
 #carouselExampleIndicators .carousel-inner {

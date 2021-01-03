@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container-fluid">
 
     {{--  BUAT BERANDA  --}}
     <div class="banner">
@@ -9,7 +9,7 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             </ol>
     
-            <div class="carousel-inner">
+            <div class="carousel-inner rounded">
                 <div class="carousel-item active">
                     <img class="d-block w-100" src="https://i01.appmifile.com/webfile/globalweb/liran/notime9c.png" alt="First slide">
                 </div>
@@ -33,10 +33,29 @@
         </div>
     </div>
 
+    {{-- Brand --}}
+    <div class="brands">
+        <div class="row p-4 text-center">
+            <div class="col-md">
+                <img src="{{ url('assets/brands/cc.png') }}" alt="" class="img-fluid">
+            </div>
+            <div class="col-md">
+                <img src="{{  url('assets/brands/pnb.png') }}" alt="" class="img-fluid">
+            </div>
+            <div class="col-md">
+                <img src="{{ url('assets/brands/uniqlo.png') }}" alt="" class="img-fluid">
+            </div>
+            <div class="col-md">
+                <img src="{{ url('assets/brands/nike.png') }}" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
     {{--  PILIH KATEGORI  --}}
-    <section class="pilih-kategori mt-4">
-        <h3><strong>Pilih Kategori</strong></h3>
-        <div class="row mt-4">
+    <section class="pilih-kategori mt-10 bg-light">
+        {{-- <h3><strong>Pilih Kategori</strong></h3> --}}
+        <br>
+        <div class="row mt-4 text-center">
             <div class="col-md-3">
                 <div class="card shadow" style="width: 15rem;">
                     <a href="/products/elektronika/2">
@@ -81,6 +100,7 @@
                 </div>
             </div>
         </div>
+        <br>
     </section>
 
     {{--  BEST PRODUCTS  --}}
