@@ -2,7 +2,7 @@
         <nav class="navbar navbar-expand-md navbar-light bg-transparent">
             <div class="container">
                 <nav class="navbar navbar-light bg-transparent">
-                    <a class="navbar-brand" href="{{ url('/') }}">
+                    <a class="navbar-brand font-weight-bold" href="{{ url('/') }}">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM_ejaqiQVqKyLdSBUpiEqAbnWSX30-SwOOw&usqp=CAU" width="30" height="30" class="d-inline-block align-top" alt="">
                     Staycalm
                     </a>

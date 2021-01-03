@@ -52,12 +52,11 @@
     </div>
 
     {{--  PILIH KATEGORI  --}}
-    <section class="pilih-kategori mt-10 bg-light">
-        {{-- <h3><strong>Pilih Kategori</strong></h3> --}}
-        <br>
-        <div class="row mt-4 text-center">
-            <div class="col-md-3">
-                <div class="card shadow" style="width: 15rem;">
+    <section class="pilih-kategori bg-light">
+        <h3 class="p-3"><strong>Kategori</strong></h3> 
+        <div class="row">
+            <div class="col-lg-3 mx-auto">
+                <div class="card shadow" style="width: 18rem;">
                     <a href="/products/elektronika/2">
                         <img src="{{ url('assets/kategori/realme-c11.png') }}" class="card-img-top" alt="handphone">
                     </a>
@@ -67,8 +66,8 @@
                 </div>
             </div>
 
-            <div class="col-md-3">
-                <div class="card shadow" style="width: 15rem;">
+            <div class="col-lg-3 mx-auto">
+                <div class="card shadow" style="width: 18rem;">
                     <a href="/products/elektronika/3">
                         <img src="{{ url('assets/kategori/zyrex.jpg') }}" class="card-img-top" alt="Laptop">
                     </a>
@@ -78,8 +77,8 @@
                 </div>
             </div>
 
-            <div class="col-md-3">
-                <div class="card shadow" style="width: 15rem;">
+            <div class="col-lg-3 mx-auto">
+                <div class="card shadow" style="width: 18rem;">
                     <a href="/products/elektronika/4">
                         <img src="{{ url('assets/kategori/philips-24inch.jpg') }}" class="card-img-top" alt="Monitor">
                     </a>
@@ -89,8 +88,8 @@
                 </div>
             </div>
 
-            <div class="col-md-3">
-                <div class="card shadow" style="width: 15rem;">
+            <div class="col-lg-3 mx-auto">
+                <div class="card shadow" style="width: 18rem;">
                     <a href="/products/elektronika/1">
                         <img src="{{ url('assets/kategori/oontz.jpg') }}" class="card-img-top" alt="Aksesoris Komputer">
                     </a>
@@ -100,23 +99,21 @@
                 </div>
             </div>
         </div>
-        <br>
+        <br><br>
     </section>
 
     {{--  BEST PRODUCTS  --}}
     <section class="products mt-5 mb-5">
-        <h3>
-            <strong>Produk Terlaris</strong>
-            <a href="{{ route('products') }}" class="btn btn-dark float-right"><i class="fas fa-eye"> Lihat
-                    Semua</i></a>
-        </h3>
+        <h3><strong>Produk Terlaris</strong></h3>
         <div class="row mt-4">
             @foreach ($products as $product)
             <div class="col-md-3">
-                <div class="card">
+                <div class="card-home">
                     <div class="card-body text-center">
-                        <img src="{{ url('assets/all_product') }}/{{ $product->gambar }}" class="img-fluid"
-                            alt="all_product">
+                        <a href="{{ route('product-detail', $product->id) }}">
+                            <img src="{{ url('assets/all_product') }}/{{ $product->gambar }}" 
+                            class="img-fluid"alt="all_product">
+                        </a>
                         <div class="row mt-2">
                             <div class="col-md-12">
                                 <br>
@@ -124,16 +121,21 @@
                                 <h5>Rp. {{ number_format($product->harga) }}</h5>
                             </div>
                         </div>
-                        <div class="row mt-2">
+                        {{-- <div class="row mt-2">
                             <div class="col-md-12">
                                 <a href="{{ route('product-detail', $product->id) }}" class="btn btn-dark btn-block"><i
                                         class="fas fa-bullseye"> Detail</i></a>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>
             @endforeach
+            <div class="col text-center">
+                <h3>
+                    <a href="{{ route('products') }}" class="btn btn-light text-center border-dark text-dark"><strong>SHOP NOW</strong></a>
+                </h3>
+            </div>
         </div>
     </section>
 </div>
